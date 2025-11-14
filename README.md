@@ -24,7 +24,7 @@ pip install -r requirements.txt
 -> Open and run the notebooks with Jupyter Lab / Notebook:
 
 ```powershell
-python -m notebook
+jupyter lab
 ```
 
 Notes
