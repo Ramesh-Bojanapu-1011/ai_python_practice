@@ -1,19 +1,11 @@
 # AI Python Practice
 
-This repository contains small hands-on examples for classical supervised
-and unsupervised machine learning tasks written as notebooks and short
-demo scripts.
+This repository provides short, hands-on examples for classical machine
+learning tasks implemented as Jupyter notebooks and small demo scripts.
 
-Contents
+## Quickstart
 
-- `Supervised_Learning/Classification/` — notebooks and scripts demonstrating
- binary and multi-class classification (KNN, Logistic Regression, etc.).
-- `Supervised_Learning/Regression/` — regression examples (linear, polynomial).
-- `Un_Supervised_Learning/` — examples for clustering and dimensionality reduction.
-
-Quickstart
-
--> Create and activate the virtual environment (Windows PowerShell):
+-> Create and activate a virtual environment (Windows PowerShell):
 
 ```powershell
 python -m venv .venv
@@ -21,24 +13,18 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
--> Open and run the notebooks with Jupyter Lab / Notebook:
+-> Launch Jupyter Lab to run and edit the notebooks interactively:
 
 ```powershell
 jupyter lab
 ```
 
-Notes
+## Notes
 
 - Many notebook cells call `model.predict(...)` and expect inputs with the
- same column names used during training. To avoid scikit-learn warnings like
- "X does not have valid feature names", pass a `pandas.DataFrame` with
- matching column names (examples in the notebooks).
+  same column names used during training. To avoid scikit-learn warnings
+  such as "X does not have valid feature names", pass a `pandas.DataFrame`
+  with matching column names (examples are included in the notebooks).
 
-Contributing
-
-- Feel free to add examples or improve documentation. Keep changes small
- and focused; update `requirements.txt` if you add new dependencies.
-
-License
-
-- No license specified. Add a LICENSE file if you intend to open-source this repo.
+- Excel support: this project uses `openpyxl` for `pandas.read_excel()`;
+  a compatible version (`openpyxl==3.1.5`) is available in `requirements.txt`.
