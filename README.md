@@ -8,8 +8,8 @@ learning tasks implemented as Jupyter notebooks and small demo scripts.
 -> Create and activate a virtual environment (Windows PowerShell):
 
 ```powershell
-python -m venv .Venv
-& .Venv\Scripts\Activate.ps1
+python -m venv .venv
+& .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
